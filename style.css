@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: hsl(218, 22%, 67%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.project {
+  width: 60%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project .f-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.project .box1 {
+  background: #fff;
+  min-height: 200px;
+  padding: 30px 40px 20px;
+  border-radius: 15px 15px 0 0;
+}
+.project .box1 h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 34px;
+}
+.project .box1 h3 {
+  margin-top: 20px;
+  color: hsl(71, 73%, 54%);
+}
+.project .box1 p {
+  color: hsl(218, 22%, 67%);
+  margin-top: 20px;
+  width: 80%;
+  line-height: 22px;
+}
+.project .grid-tag {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project .grid-tag .box2 {
+  background: hsl(179, 62%, 43%);
+  min-height: 200px;
+  padding: 30px 40px 10px;
+  max-width: 100%;
+}
+.project .grid-tag .box2 .price {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.project .grid-tag .box2 .price h2 {
+  font-size: 34px;
+  color: #fff;
+}
+.project .grid-tag .box2 .price p {
+  color: hsl(179, 62%, 23%);
+  font-weight: 600;
+  margin-left: 10px;
+}
+.project .grid-tag .box2 .box2-h2 {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.project .grid-tag .box2 h2 {
+  color: #fff;
+}
+.project .grid-tag .box2 a {
+  margin-top: 15px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 60px;
+  display: inline-block;
+  border-radius: 8px;
+  background-color: hsl(71, 73%, 54%);
+}
+.project .grid-tag .box3 {
+  background: hsl(179, 62%, 23%);
+  padding: 30px 40px 10px;
+}
+.project .grid-tag .box3 h2 {
+  color: #fff;
+}
+.project .grid-tag .box3 p {
+  width: 62%;
+  line-height: 23px;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .project .grid-tag {
+    display: block;
+  }
+}
+@media (max-width: 420px) {
+  .project .grid-tag .box3 p {
+    width: 70%;
+  }
+}
